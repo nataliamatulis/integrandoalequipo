@@ -5,6 +5,7 @@ body {
 
 h2{
     color: rgb(0, 27, 76);
+    text-align: center;
 }
 
 .image{
@@ -21,4 +22,12 @@ h2{
     padding: 5px;
     border-radius: 5px;
     box-shadow: 2px 3px #888888;
+}
+
+h1 {
+    text-align: center;
+    background-color: #f0f0f0;
+    text-transform: uppercase;
+    padding: 1.4rem;
+    margin: 0;
 }
