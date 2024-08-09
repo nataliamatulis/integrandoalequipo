@@ -1,4 +1,5 @@
 body {
+    text-align: center;
     background-color: rgb(255, 255, 165);
     font-size: medium;
     font-family: "Combo", system-ui;
@@ -7,9 +8,35 @@ body {
 }
 
 .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border: 5px solid green;
     border-radius: 10px;
     height: 400px;
+    animation: borderAnimation 3s infinite alternate;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(184, 15, 113);
+        border-radius: 10px;
+    }
+    50% {
+        border-color: rgb(114, 3, 90);
+        border-radius: 50px;
+    }
+    100% {
+        border-color: rgb(47, 3, 56);
+        border-radius: 10px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .link-button {
