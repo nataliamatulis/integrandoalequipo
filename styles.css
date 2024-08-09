@@ -9,9 +9,25 @@ h2{
 }
 
 .image{
-    border: 5px solid green;
+    border: 5px solid rgb(184, 15, 113);
     border-radius: 10px;
     height: 400px;
+    animation: borderAnimation 3s infinite alternate;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(184, 15, 113);
+        border-radius: 10px;
+    }
+    50% {
+        border-color: rgb(114, 3, 90);
+        border-radius: 50px;
+    }
+    100% {
+        border-color: rgb(47, 3, 56);
+        border-radius: 10px;
+    }
 }
 
 .button-container {
